@@ -1,0 +1,112 @@
+:root{
+    --text-color: rgb(36, 8, 102);
+}
+body{
+    display: grid;
+    place-content: center;
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background-color: rgb(255, 243, 255);
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+input{
+    font: inherit;
+    color: inherit;
+    padding: .25rem;
+    text-align: center;
+    border: 0px;
+}
+h3{
+    color: var(--text-color);
+}
+p{
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: .9rem;
+}
+button{
+    padding: .5rem;
+    border: none;
+    background-color: none;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+ion-icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*utilities*/
+.wrapper{
+    max-width: 500px;
+}
+@media only screen and (max-width: 800px) {
+    .wrapper{
+        padding: 1rem;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+/*component styles*/
+.main{
+    background-color: white;
+    padding: 3.5rem;
+    border-radius: 15px;
+}
+.media{
+    display: flex;
+}
+.media__figure{
+    max-width: 20%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: padding-box;
+}
+.media__body{
+    flex-direction: column;
+    justify-content: center;
+    margin-left: .5rem;
+}
+.form{
+    margin-bottom: .5rem;
+    position: relative;
+    margin-top: 1.5rem;
+}
+.form > *{
+    display: block;
+    border-radius: 5px;
+    padding-block: 1rem;
+}
+.form > * + *{
+    margin-top: 1rem;
+}
+.form__input{
+    border-block: 2px solid var(--text-color);
+    color: var(--text-color);
+    width: 100%;
+}
+.form__btn{
+    background-color: var(--text-color);
+    color: white;
+    font: inherit;
+    width: 100%;
+}
+.form ion-icon{
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+}
